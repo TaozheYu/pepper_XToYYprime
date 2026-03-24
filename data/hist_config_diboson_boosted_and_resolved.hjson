@@ -1,0 +1,590 @@
+# Collection of a range of histogram configurations. Some of these are used
+# as input by some of the scripts provided by Pepper, for example for
+# evaluating b-tagging efficiencies.
+{
+    "1st_fatjet":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Leading AK8jet $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 30,
+                "lo": 0,
+                "hi": 1500
+            },
+            {
+                "name": "eta",
+                "label": "Leading fatjet $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+            },
+            {
+                "name": "softdrop_mass",
+                "label": "Leading AK8jet softdrop mass (GeV)",
+                "n_or_arr": 20,
+                "lo": 0,
+                "hi": 300
+            },
+        ],
+        "fill": {
+            "pt": [
+                "FatJet",
+                "pt",
+                {"leading": 1}
+            ],
+            "eta": [
+                "FatJet",
+                "eta",
+                {"leading": 1}
+            ],
+            "softdrop_mass": [
+                "FatJet",
+                "msoftdrop",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    #"Reco_Y_softdropmass":
+    #{
+    #    "bins": [
+    #        {
+    #            "name": "Y_mass",
+    #            "label": "Reco Y softdrop mass (GeV)",
+    #            "n_or_arr": 15,
+    #            "lo": 0,
+    #            "hi": 300
+    #        }
+    #    ],
+    #    "fill": {
+    #        "Y_mass": [
+    #            "Reco_Y",
+    #            "msoftdrop",
+    #            {"leading": 1}
+    #        ]
+    #    },
+    #    "step_requirement": "cut:Has_at_least_two_jets"
+    #},
+    #"2nd_fatjet":
+    #{
+    #    "bins": [
+    #        {
+    #            "name": "pt",
+    #            "label": "Subleading AK8jet $p_{{\\mathrm{{T}}}}$ (GeV)",
+    #            "n_or_arr": 40,
+    #            "lo": 0,
+    #            "hi": 3000
+    #        },
+    #        {
+    #            "name": "eta",
+    #            "label": "Subleading fatjet $\\eta$",
+    #            "n_or_arr": 20,
+    #            "lo": -2.4,
+    #            "hi": 2.4
+    #            
+    #        },
+    #        {
+    #            "name": "softdrop_mass",
+    #            "label": "Subleading AK8jet softdrop mass (GeV)",
+    #            "n_or_arr": 40,
+    #            "lo": 0,
+    #            "hi": 1000
+    #        }
+    #    ],
+    #    "fill": {
+    #        "pt": [
+    #            "FatJet",
+    #            "pt",
+    #            {"leading": 2}
+    #        ],
+    #        "eta": [
+    #            "FatJet",
+    #            "eta",
+    #            {"leading": 2}
+    #        ],
+    #        "softdrop_mass": [
+    #            "FatJet",
+    #            "msoftdrop",
+    #            {"leading": 2}
+    #        ]
+    #    },
+    #    "step_requirement": "cut:Has_at_least_two_jets"
+    #},
+    "1st_jet":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Leading AK4jet $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 30,
+                "lo": 0,
+                "hi": 1500
+            },
+            {
+                "name": "eta",
+                "label": "Leading jet $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+            },
+        ],
+        "fill": {
+            "pt": [
+                "Jet",
+                "pt",
+                {"leading": 1}
+            ],
+            "eta": [
+                "Jet",
+                "eta",
+                {"leading": 1}
+            ],
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "2nd_jet":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Subleading AK4jet $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 3000
+            },
+            {
+                "name": "eta",
+                "label": "Subleading jet $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+                
+            },
+        ],
+        "fill": {
+            "pt": [
+                "Jet",
+                "pt",
+                {"leading": 2}
+            ],
+            "eta": [
+                "Jet",
+                "eta",
+                {"leading": 2}
+            ],
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    #"1st_fatjet_softdrop_mass":
+    #{
+    #    "bins": [
+    #        {
+    #            "name": "softdrop_mass",
+    #            "label": "Leading AK8jet softdrop mass (GeV)",
+    #            "n_or_arr": 15,
+    #            "lo": 0,
+    #            "hi": 300
+    #        }
+    #    ],
+    #    "fill": {
+    #        "softdrop_mass": [
+    #            "FatJet",
+    #            "msoftdrop",
+    #            {"leading": 1}
+    #        ]
+    #    },
+    #    #"step_requirement": "cut:Has_at_least_two_fatjets"
+    #    "step_requirement": "cut:Has_at_least_two_genjets"
+    #},
+    #"2nd_fatjet_softdrop_mass":
+    #{
+    #    "bins": [
+    #        {
+    #            "name": "softdrop_mass",
+    #            "label": "Subleading AK8jet softdrop mass (GeV)",
+    #            "n_or_arr": 40,
+    #            "lo": 0,
+    #            "hi": 1000
+    #        }
+    #    ],
+    #    "fill": {
+    #        "softdrop_mass": [
+    #            "FatJet",
+    #            "msoftdrop",
+    #            {"leading": 2}
+    #        ]
+    #    },
+    #    #"step_requirement": "cut:Has_at_least_two_fatjets"
+    #    "step_requirement": "cut:Has_at_least_two_genjets"
+    #},
+    "Gen_Y_mass":
+    {
+        "bins": [
+            {
+                "name": "Gen_Y_mass",
+                "label": "Gen level Y mass (GeV)",
+                "n_or_arr": 20,
+                "lo": 0,
+                "hi": 300
+            }
+        ],
+        "fill": {
+            "Gen_Y_mass": [
+                "GenJet_Y_mass",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_genjets"
+    },
+    "Gen_Yprime_mass":
+    {
+        "bins": [
+            {
+                "name": "Gen_Yprime_mass",
+                "label": "Gen level Yprime mass (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 1000
+            }
+        ],
+        "fill": {
+            "Gen_Yprime_mass": [
+                "GenJet_Yprime_mass",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_genjets"
+    },
+    "Gen_X_mass":
+    {
+        "bins": [
+            {
+                "name": "Gen_X_mass",
+                "label": "Gen level X mass (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 2000
+            }
+        ],
+        "fill": {
+            "Gen_X_mass": [
+                "GenJet_X_mass",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_genjets"
+    },
+    "Reco_Y_mass":
+    {
+        "bins": [
+            {
+                "name": "Reco_Y_mass",
+                "label": "Reco level Y mass (GeV)",
+                #"n_or_arr": 24,
+                #"lo": 39.5,
+                #"hi": 507.5,
+                #"n_or_arr": [50, 55, 60, 66, 72, 79, 86, 94, 103, 113, 124, 136, 149, 163, 179, 196, 215, 236, 259, 284, 312, 343, 377, 414, 455, 500, 550],
+                "n_or_arr": [50, 55, 60, 66, 72, 79, 86, 94, 103, 113, 124, 136, 149, 163, 179, 196, 215, 236, 259, 284, 312, 343, 377, 414, 455, 500, 550],
+                #"lo": 20,
+                #"hi": 800
+            }
+        ],
+        "fill": {
+            "Reco_Y_mass": [
+                "FatJet",
+                "msoftdrop",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "Reco_Yprime_mass":
+    {
+        "bins": [
+            {
+                "name": "Reco_Yprime_mass",
+                "label": "Reco level Yprime mass (GeV)",
+                #"n_or_arr": 62,
+                #"lo": 100,
+                #"hi": 2518,
+                #"n_or_arr": [50, 55, 60, 66, 72, 79, 86, 94, 103, 113, 124, 136, 149, 163, 179, 196, 215, 236, 259, 284, 312, 343, 377, 414, 455, 500, 550, 605, 665, 731, 804, 884, 972, 1069, 1175, 1292, 1421, 1563, 1719, 1890, 2079, 2286, 2514, 2765, 3041, 3345],
+                "n_or_arr": [50, 60, 72, 86, 103, 123, 147, 176, 211, 253, 303, 363, 435, 522, 626, 751, 901, 1081, 1297, 1556, 1867, 2240, 2688, 3225],
+                #"lo": 50,
+                #"hi": 4000
+            }
+        ],
+        "fill": {
+            "Reco_Yprime_mass": [
+                "Reco_Yprime_mass",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "Reco_X_mass":
+    {
+        "bins": [
+            {
+                "name": "Reco_X_mass",
+                "label": "Reco level X mass (GeV)",
+                #"n_or_arr": 22,
+                #"lo": 1475,
+                #"hi": 5050,
+                #"n_or_arr": [1455, 1530, 1607, 1687, 1770, 1856, 1945, 2037, 2132, 2231, 2332, 2438, 2546, 2659, 2775, 2895, 3019, 3147, 3279, 3416, 3558, 3704, 3854, 4010, 4171, 4337, 4509, 4686, 4869, 5058, 5253, 5455, 5663, 5877, 6099, 6328, 6564, 6808],
+                "n_or_arr": [1200, 1320, 1452, 1597, 1756, 1931, 2124, 2336, 2569, 2825, 3107, 3417, 3758, 4133, 4546, 5000, 5500, 6050, 6655],
+                #"lo": 500,
+                #"hi": 7000
+            }
+        ],
+        "fill": {
+            "Reco_X_mass": [
+                "Reco_X_mass",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "Reco_Yprime_pt":
+    {
+        "bins": [
+            {
+                "name": "Reco_Yprime_pt",
+                "label": "Reco level Yprime pt (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 1000
+            }
+        ],
+        "fill": {
+            "Reco_Yprime_pt": [
+                "Reco_Yprime_pt",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "Reco_X_pt":
+    {
+        "bins": [
+            {
+                "name": "Reco_X_pt",
+                "label": "Reco level X pt (GeV)",
+                "n_or_arr": 30,
+                "lo": 0,
+                "hi": 1000
+            }
+        ],
+        "fill": {
+            "Reco_X_pt": [
+                "Reco_X_pt",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "Reco_Y_pt":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Reco level Y pt (GeV)",
+                "n_or_arr": 30,
+                "lo": 0,
+                "hi": 1500
+            }
+        ],
+        "fill": {
+            "pt": [
+                "Reco_Y_pt",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "genWeight":
+    {
+        "bins": [
+            {
+                "name": "gen_weight",
+                "label": "",
+                "n_or_arr": 100,
+                "lo": 0,
+                "hi": 2,
+            }
+        ],
+        "fill": {
+            "gen_weight": [
+                "genWeight",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "HT":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "HT (GeV)",
+                #"n_or_arr": 30,
+                "n_or_arr": [50, 55, 60, 66, 72, 79, 86, 94, 103, 113, 124, 136, 149, 163, 179, 196, 215, 236, 259, 284, 312, 343, 377, 414, 455, 500, 550, 605, 665, 731, 804, 884, 972, 1069, 1175, 1292, 1421, 1563, 1719, 1890, 2079, 2286, 2514, 2765, 3041, 3345, 3679, 4046, 4450, 4895, 5384, 5922],
+                #"lo": 0,
+                #"hi": 6000
+            }
+        ],
+        "fill": {
+            "pt": [
+                "HT",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "DeltaR_jet1_fatjet1":
+    {
+        "bins": [
+            {
+                "name": "DeltaR",
+                "label": "#DeltaR(leading AK4 jet, leading AK8 jet)",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 4,
+            }
+        ],
+        "fill": {
+            "DeltaR": [
+                "Reco_DeltaR_jet1_fatjet1",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "DeltaR_jet2_fatjet1":
+    {
+        "bins": [
+            {
+                "name": "DeltaR",
+                "label": "#DeltaR(Subleading AK4 jet, leading AK8 jet)",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 4,
+            }
+        ],
+        "fill": {
+            "DeltaR": [
+                "Reco_DeltaR_jet2_fatjet1",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "DeltaR_jet3_fatjet1":
+    {
+        "bins": [
+            {
+                "name": "DeltaR",
+                "label": "#DeltaR(3nd leading AK4 jet, leading AK8 jet)",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 4,
+            }
+        ],
+        "fill": {
+            "DeltaR": [
+                "Reco_DeltaR_jet3_fatjet1",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "Gen_Delta_phi_YYprime":
+    {
+        "bins": [
+            {
+                "name": "Delta_phi_YYprime",
+                "label": "Gen level DeltaPhi(Y, Yprime)",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 4,
+            }
+        ],
+        "fill": {
+            "Delta_phi_YYprime": [
+                "GenP_DeltaPhi_YYprime",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "Xqq_vs_QCD":
+    {
+        "bins": [
+            {
+                "name": "Particle_Net_Xqq_vs_QCD_score",
+                "label": "Xqq_vs_QCD score",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 1,
+            }
+        ],
+        "fill": {
+            "Particle_Net_Xqq_vs_QCD_score": [
+                "Particle_Net_Xqq_vs_QCD_score",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "2D_DeltaR":
+    {
+        "bins": [
+            {
+                "name": "DeltaR_jet1_fatjet1",
+                "label": "Reco level DeltaR(leading AK4 jet, leading AK8 jet)",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 4,
+            },
+            {
+                "name": "DeltaR_jet2_fatjet1",
+                "label": "Reco level DeltaR(Subleading AK4 jet, leading AK8 jet)",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 4,
+            }
+        ],
+        "fill": {
+            "DeltaR_jet1_fatjet1": [
+                "Reco_DeltaR_jet1_fatjet1",
+            ],
+            "DeltaR_jet2_fatjet1": [
+                "Reco_DeltaR_jet2_fatjet1",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    "multisample_X_mass":
+    {
+        "bins": [
+            {
+                "name": "Reco_X_mass",
+                "label": "Reco level X mass (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 4000
+            }
+        ],
+        "fill": {
+            "Reco_X_mass": [
+                "multisample_select_X_mass",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_jets"
+    },
+    #"1st_fatjet":
+    #{
+    #    "bins": [
+    #        {
+    #            "name": "pt",
+    #            "label": "Reco level Y pt (GeV)",
+    #            "n_or_arr": 30,
+    #            "lo": 0,
+    #            "hi": 1500
+    #        }
+    #    ],
+    #    "fill": {
+    #        "pt": [
+    #            "FatJet",
+    #            "pt",
+    #            {"leading": 1}
+    #        ]
+    #    },
+    #    "step_requirement": "cut:Has_at_least_two_jets"
+    #},
+}

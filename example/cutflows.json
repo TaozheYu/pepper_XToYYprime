@@ -1,0 +1,19 @@
+{
+    "TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8": {
+        "all": {
+            "BeforeCuts": 71825.92358398438,
+            "Trigger": 14466.962341308594,
+            "Exactly 2 leptons": 7778.718444824219,
+            "OC leptons": 7706.0201416015625
+        }
+    },
+    "MuonEG": {
+        "all": {
+            "BeforeCuts": 1000.0,
+            "Lumi": 1000.0,
+            "Trigger": 391.0,
+            "Exactly 2 leptons": 14.0,
+            "OC leptons": 13.0
+        }
+    }
+}

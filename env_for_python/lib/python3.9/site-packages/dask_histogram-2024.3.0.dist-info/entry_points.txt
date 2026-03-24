@@ -1,0 +1,2 @@
+[dask.sizeof]
+dask_histogram = dask_histogram.sizeof:register

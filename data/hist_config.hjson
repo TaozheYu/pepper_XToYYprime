@@ -1,0 +1,326 @@
+# Collection of a range of histogram configurations. Some of these are used
+# as input by some of the scripts provided by Pepper, for example for
+# evaluating b-tagging efficiencies.
+{
+    "1st_lep_pt":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Leading lepton $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 20,
+                "lo": 0,
+                "hi": 200
+            }
+        ],
+        "fill": {
+            "pt": [
+                "Lepton",
+                "pt",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Req lep pT"
+    },
+    "2nd_lep_pt":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Subleading lepton $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 20,
+                "lo": 0,
+                "hi": 200
+            }
+        ],
+        "fill": {
+            "pt": [
+                "Lepton",
+                "pt",
+                {"leading": 2}
+            ]
+        },
+        "step_requirement": "cut:Req lep pT"
+    },
+    "1st_lep_eta":
+    {
+        "bins": [
+            {
+                "name": "eta",
+                "label": "Leading lepton $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+            }
+        ],
+        "fill": {
+            "eta": [
+                "Lepton",
+                "eta",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Req lep pT"
+    },
+    "2nd_lep_eta":
+    {
+        "bins": [
+            {
+                "name": "eta",
+                "label": "Subleading lepton $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+            }
+        ],
+        "fill": {
+            "eta": [
+                "Lepton",
+                "eta",
+                {"leading": 2}
+            ]
+        },
+        "step_requirement": "cut:Req lep pT"
+    },
+    "1st_jet_pt":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Leading jet $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 20,
+                "lo": 0,
+                "hi": 400
+            }
+        ],
+        "fill": {
+            "pt": [
+                "Jet",
+                "pt",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Has jet(s)"
+    },
+    "2nd_jet_pt":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Subleading jet $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 20,
+                "lo": 0,
+                "hi": 400
+            }
+        ],
+        "fill": {
+            "pt": [
+                "Jet",
+                "pt",
+                {"leading": 2}
+            ]
+        },
+        "step_requirement": "cut:Has jet(s)"
+    },
+    "1st_jet_eta":
+    {
+        "bins": [
+            {
+                "name": "eta",
+                "label": "Leading jet $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+            }
+        ],
+        "fill": {
+            "eta": [
+                "Jet",
+                "eta",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Has jet(s)"
+    },
+    "2nd_jet_eta":
+    {
+        "bins": [
+            {
+                "name": "eta",
+                "label": "Subleading jet $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+                
+            }
+        ],
+        "fill": {
+            "eta": [
+                "Jet",
+                "eta",
+                {"leading": 2}
+            ]
+        },
+        "step_requirement": "cut:Has jet(s)"
+    },
+    "njet": {
+        "bins": [
+            {
+                "name": "njet",
+                "label": "Number of jets",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 10
+            }
+        ],
+        "fill": {
+            "njet": [
+                "Jet",
+                {"function": "num"}
+            ]
+        },
+        "step_requirement": "cut:Has jet(s)"
+    },
+    "nbtag": {
+        "bins": [
+            {
+                "name": "nbtag",
+                "label": "Number of btags",
+                "n_or_arr": 5,
+                "lo": 0,
+                "hi": 5
+            }
+        ],
+        "fill": {
+            "nbtag": [
+                "nbtag"
+            ]
+        },
+        "step_requirement": "cut:Has jet(s)"
+    },
+    "pileup_nvtx": {
+        "bins": [
+            {
+                "name": "nvtx",
+                "label": "Number of good reconstructed primary vertices",
+                "n_or_arr": 60,
+                "lo": 0,
+                "hi": 60
+            }
+        ],
+        "fill": {
+            "nvtx": [
+                "PV",
+                "npvsGood"
+            ]
+        },
+        "step_requirement": "cut:Lumi"
+    },
+    "pileup_rho_calo": {
+        "bins": [
+            {
+                "name": "rho",
+                "label": "$\\rho$ (calorimeter)",
+                "n_or_arr": 30,
+                "lo": 0.0,
+                "hi": 30.0
+            }
+        ],
+        "fill": {
+            "rho": [
+                "Rho",
+                "fixedGridRhoFastjetCentralCalo"
+            ]
+        },
+        "step_requirement": "cut:Lumi"
+    },
+    "pileup_rho_tracker": {
+        "bins": [
+            {
+                "name": "rho",
+                "label": "$\\rho$ (tracker)",
+                "n_or_arr": 50,
+                "lo": 0.0,
+                "hi": 50.0
+            }
+        ],
+        "fill": {
+            "rho": [
+                "Rho",
+                "fixedGridRhoFastjetCentralChargedPileUp"
+            ]
+        },
+        "step_requirement": "cut:Lumi"
+    },
+    "1st_lep_phi":
+    {
+        "bins": [
+            {
+                "name": "phi",
+                "label": "Leading lepton $\\phi$",
+                "n_or_arr": 20,
+                "lo": -3.2,
+                "hi": 3.2
+            }
+        ],
+        "fill": {
+            "phi": [
+                "Lepton",
+                "phi",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Req lep pT"
+    },
+    "MET_pt":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "MET [GeV]",
+                "n_or_arr": 100,
+                "lo": 20,
+                "hi": 1000
+            }
+        ],
+        "fill": {
+            "pt": [
+                "MET",
+                "pt",
+            ]
+        },
+        "step_requirement": "cut:Has jet(s)"
+    },
+    "2D_1stand2nd_lep_pt":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Leading lepton $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 200
+            },
+            {
+                "name": "sub_pt",
+                "label": "Subleading lepton $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 10,
+                "lo": 0,
+                "hi": 200
+            }
+        ],
+        "fill": {
+            "pt": [
+                "Lepton",
+                "pt",
+                {"leading": 1}
+            ],
+            "sub_pt": [
+                "Lepton",
+                "pt",
+                {"leading": 2}
+            ]
+        },
+        "step_requirement": "cut:Req lep pT"
+    },
+}

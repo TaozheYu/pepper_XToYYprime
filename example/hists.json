@@ -1,0 +1,96 @@
+{
+    "key_fields": [
+        "cut",
+        "hist"
+    ],
+    "content": [
+        [
+            [
+                "BeforeCuts",
+                "leading_muon_pt"
+            ],
+            [
+                "BeforeCuts",
+                "leading_electron_pt"
+            ],
+            [
+                "BeforeCuts",
+                "number_of_electrons"
+            ],
+            [
+                "Trigger",
+                "leading_electron_pt"
+            ],
+            [
+                "Exactly 2 leptons",
+                "number_of_electrons"
+            ],
+            [
+                "Exactly 2 leptons",
+                "leading_muon_pt"
+            ],
+            [
+                "Trigger",
+                "number_of_electrons"
+            ],
+            [
+                "Trigger",
+                "leading_muon_pt"
+            ],
+            [
+                "Lumi",
+                "number_of_electrons"
+            ],
+            [
+                "Lumi",
+                "leading_electron_pt"
+            ],
+            [
+                "OC leptons",
+                "leading_electron_pt"
+            ],
+            [
+                "OC leptons",
+                "number_of_electrons"
+            ],
+            [
+                "OC leptons",
+                "leading_muon_pt"
+            ],
+            [
+                "Exactly 2 leptons",
+                "leading_electron_pt"
+            ],
+            [
+                "Lumi",
+                "leading_muon_pt"
+            ]
+        ],
+        [
+            "Cut_000_BeforeCuts_leading_muon_pt.root",
+            "Cut_000_BeforeCuts_leading_electron_pt.root",
+            "Cut_000_BeforeCuts_number_of_electrons.root",
+            "Cut_002_Trigger_leading_electron_pt.root",
+            "Cut_003_Exactly 2 leptons_number_of_electrons.root",
+            "Cut_003_Exactly 2 leptons_leading_muon_pt.root",
+            "Cut_002_Trigger_number_of_electrons.root",
+            "Cut_002_Trigger_leading_muon_pt.root",
+            "Cut_001_Lumi_number_of_electrons.root",
+            "Cut_001_Lumi_leading_electron_pt.root",
+            "Cut_004_OC leptons_leading_electron_pt.root",
+            "Cut_004_OC leptons_number_of_electrons.root",
+            "Cut_004_OC leptons_leading_muon_pt.root",
+            "Cut_003_Exactly 2 leptons_leading_electron_pt.root",
+            "Cut_001_Lumi_leading_muon_pt.root"
+        ]
+    ],
+    "userdata": {
+        "cuts": [
+            "BeforeCuts",
+            "Lumi",
+            "Trigger",
+            "Exactly 2 leptons",
+            "OC leptons"
+        ]
+    }
+}

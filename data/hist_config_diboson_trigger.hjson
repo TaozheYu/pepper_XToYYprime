@@ -1,0 +1,163 @@
+# Collection of a range of histogram configurations. Some of these are used
+# as input by some of the scripts provided by Pepper, for example for
+# evaluating b-tagging efficiencies.
+{
+    #"Mass_3D":
+    #{
+    #    "bins": [
+    #        {
+    #            "name": "Reco_Y_mass",
+    #            "label": "Reco level Y mass (GeV)",
+    #            #"n_or_arr": 20,
+    #            #"lo": 0,
+    #            #"hi": 300
+    #            "n_or_arr": 5,
+    #            "lo": 20,
+    #            "hi": 120
+    #        },
+    #        {
+    #            "name": "Reco_Yprime_mass",
+    #            "label": "Reco level Yprime mass (GeV)",
+    #            #"n_or_arr": 40,
+    #            #"lo": 0,
+    #            #"hi": 800
+    #            "n_or_arr": 6,
+    #            "lo": 50,
+    #            "hi": 500
+    #        },
+    #        {
+    #            "name": "Reco_X_mass",
+    #            "label": "Reco level X mass (GeV)",
+    #            #"n_or_arr": 60,
+    #            #"lo": 0,
+    #            #"hi": 5000
+    #            "n_or_arr": 5,
+    #            "lo": 500,
+    #            "hi": 2000
+    #        }
+    #    ],
+    #    "fill": {
+    #        "Reco_Y_mass": [
+    #            "Reco_Y_mass",
+    #        ],
+    #        "Reco_Yprime_mass": [
+    #            "Reco_Yprime_mass",
+    #        ],
+    #        "Reco_X_mass": [
+    #            "Reco_X_mass",
+    #        ],
+    #    },
+    #    "step_requirement": "cut:Has_at_least_two_jets"
+    #}
+    "Mass_3D":
+    {
+        "bins": [
+            {
+                "name": "Reco_Y_mass",
+                "label": "Reco level Y mass (GeV)",
+                #"n_or_arr": 20,
+                #"lo": 0,
+                #"hi": 300
+                "n_or_arr": 20,
+                "lo": 20,
+                "hi": 500
+            },
+            {
+                "name": "Reco_Yprime_mass",
+                "label": "Reco level Yprime mass (GeV)",
+                #"n_or_arr": 40,
+                #"lo": 0,
+                #"hi": 800
+                "n_or_arr": 20,
+                "lo": 30,
+                "hi": 2000
+            },
+            {
+                "name": "Reco_X_mass",
+                "label": "Reco level X mass (GeV)",
+                #"n_or_arr": 60,
+                #"lo": 0,
+                #"hi": 5000
+                "n_or_arr": 40,
+                "lo": 500,
+                "hi": 7000
+            }
+        ],
+        "fill": {
+            "Reco_Y_mass": [
+                "Reco_Y_mass",
+            ],
+            "Reco_Yprime_mass": [
+                "Reco_Yprime_mass",
+            ],
+            "Reco_X_mass": [
+                "Reco_X_mass",
+            ],
+        },
+        "step_requirement": "cut:Lumi"
+    },
+    #"HT":
+    #{
+    #    "bins": [
+    #        {
+    #            "name": "pt",
+    #            "label": "HT (GeV)",
+    #            "n_or_arr": 70,
+    #            "lo": 0,
+    #            "hi": 7000
+    #        }
+    #    ],
+    #    "fill": {
+    #        "pt": [
+    #            "HT",
+    #        ]
+    #    },
+    #    "step_requirement": "cut:Lumi"
+    #},
+    "HT":
+    {
+        "bins": [
+            {
+                "name": "HT",
+                "label": "HT (GeV)",
+                "n_or_arr": 70,
+                "lo": 0,
+                "hi": 7000
+            }
+        ],
+        "cats": [
+            {
+                "name": "muon_triggers",
+                "label": "muon_triggers"
+            },
+            {
+                "name": "jet_triggers",
+                "label": "jet_triggers"
+            }
+        ],
+        "fill": {
+            "HT": [
+                "HT"
+            ],
+            "muon_triggers": {
+                "m_pass": [
+                    "muon_triggers"
+                ],
+                "m_fail": [
+                    "muon_triggers",
+                    {"function": "not"}
+                ]
+            },
+            "jet_triggers": {
+                "j_pass": [
+                    "jet_triggers"
+                ],
+                "j_fail": [
+                    "jet_triggers",
+                    {"function": "not"}
+                ]
+            }
+        },
+        "step_requirement": "column:HT"
+    },
+}

@@ -1,0 +1,4 @@
+python3 processor_diboson_make3DTemplate.py data/2016/config_diboson_make3DTemplate.hjson -o diboson_output_make3DTemplate_2016/debug_test --statedata diboson_output_make3DTemplate_2016/debug_test/state.coffea -d
+
+#python scripts/plot_histograms.py data/2017/config_diboson_make3DTemplate.hjson diboson_output_make3DTemplate/debug_test/debug_test/hists/hists.json 
+

@@ -1,0 +1,306 @@
+000 (2515096.000.000) 2024-08-29 10:12:07 Job submitted from host: <131.169.223.41:9618?addrs=131.169.223.41-9618+[2001-638-700-10df--1-29]-9618&alias=bird-htc-sched21.desy.de&noUDP&sock=schedd_3603117_2564>
+...
+001 (2515096.000.000) 2024-08-29 10:12:46 Job executing on host: <131.169.77.211:33123?addrs=131.169.77.211-33123+[2001-638-700-104c--1-1d3]-33123&alias=bird765.desy.de>
+	SlotName: slot2_5@bird765.desy.de
+	CondorScratchDir = "/var/lib/condor/execute/dir_2109059"
+	Cpus = 1
+	Disk = 20481024
+	GPUs = 0
+	Memory = 1536
+...
+006 (2515096.000.000) 2024-08-29 10:12:48 Image size of job updated: 20664
+	16  -  MemoryUsage of job (MB)
+	15404  -  ResidentSetSize of job (KB)
+...
+005 (2515096.000.000) 2024-08-29 10:12:48 Job terminated.
+	(1) Normal termination (return value 126)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1 20480000  20481024 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       16     1536      1536 
+	   TimeExecute (s)      :        2                    
+	   TimeSlotBusy (s)     :        3                    
+
+	Job terminated of its own accord at 2024-08-29T08:12:48Z with exit-code 126.
+...
+000 (2515100.000.000) 2024-08-29 10:14:40 Job submitted from host: <131.169.223.41:9618?addrs=131.169.223.41-9618+[2001-638-700-10df--1-29]-9618&alias=bird-htc-sched21.desy.de&noUDP&sock=schedd_3603117_2564>
+...
+001 (2515100.000.000) 2024-08-29 10:14:47 Job executing on host: <131.169.77.217:36597?addrs=131.169.77.217-36597+[2001-638-700-104c--1-1d9]-36597&alias=bird771.desy.de>
+	SlotName: slot2_18@bird771.desy.de
+	CondorScratchDir = "/var/lib/condor/execute/dir_1472535"
+	Cpus = 1
+	Disk = 20481024
+	GPUs = 0
+	Memory = 1536
+...
+006 (2515100.000.000) 2024-08-29 10:14:55 Image size of job updated: 76852
+	51  -  MemoryUsage of job (MB)
+	51320  -  ResidentSetSize of job (KB)
+...
+006 (2515100.000.000) 2024-08-29 10:16:39 Image size of job updated: 2034832
+	996  -  MemoryUsage of job (MB)
+	1019680  -  ResidentSetSize of job (KB)
+...
+005 (2515100.000.000) 2024-08-29 10:16:39 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:54, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:54, Sys 0 00:00:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1 20480000  20481024 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      996     1536      1536 
+	   TimeExecute (s)      :      112                    
+	   TimeSlotBusy (s)     :      114                    
+
+	Job terminated of its own accord at 2024-08-29T08:16:39Z with exit-code 0.
+...
+000 (2515146.000.000) 2024-08-29 10:18:47 Job submitted from host: <131.169.223.41:9618?addrs=131.169.223.41-9618+[2001-638-700-10df--1-29]-9618&alias=bird-htc-sched21.desy.de&noUDP&sock=schedd_3603117_2564>
+...
+001 (2515146.000.000) 2024-08-29 10:19:45 Job executing on host: <131.169.164.31:43453?addrs=131.169.164.31-43453+[2001-638-700-10a0--1-41f]-43453&alias=bird831.desy.de>
+	SlotName: slot2_14@bird831.desy.de
+	CondorScratchDir = "/var/lib/condor/execute/dir_1414631"
+	Cpus = 1
+	Disk = 20481024
+	GPUs = 0
+	Memory = 1536
+...
+006 (2515146.000.000) 2024-08-29 10:19:54 Image size of job updated: 262464
+	257  -  MemoryUsage of job (MB)
+	262308  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 10:24:55 Image size of job updated: 3699752
+	2179  -  MemoryUsage of job (MB)
+	2230604  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 10:29:55 Image size of job updated: 4266684
+	3100  -  MemoryUsage of job (MB)
+	3173612  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 10:39:56 Image size of job updated: 4266684
+	3150  -  MemoryUsage of job (MB)
+	3224872  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 10:44:56 Image size of job updated: 4485912
+	3150  -  MemoryUsage of job (MB)
+	3224872  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 10:49:56 Image size of job updated: 4503256
+	3660  -  MemoryUsage of job (MB)
+	3747356  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 10:54:57 Image size of job updated: 4666220
+	3660  -  MemoryUsage of job (MB)
+	3747356  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 11:09:45 Image size of job updated: 4780792
+	3660  -  MemoryUsage of job (MB)
+	3747356  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 11:24:07 Image size of job updated: 4780792
+	3951  -  MemoryUsage of job (MB)
+	4045332  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 11:35:36 Image size of job updated: 5027296
+	3951  -  MemoryUsage of job (MB)
+	4045332  -  ResidentSetSize of job (KB)
+...
+006 (2515146.000.000) 2024-08-29 11:42:30 Image size of job updated: 5027296
+	4090  -  MemoryUsage of job (MB)
+	4187168  -  ResidentSetSize of job (KB)
+...
+001 (2515146.000.000) 2024-08-29 12:47:06 Job executing on host: <131.169.77.226:33303?addrs=131.169.77.226-33303+[2001-638-700-104c--1-1e2]-33303&alias=bird780.desy.de>
+	SlotName: slot2_11@bird780.desy.de
+	CondorScratchDir = "/var/lib/condor/execute/dir_1185297"
+	Cpus = 1
+	Disk = 20481024
+	GPUs = 0
+	Memory = 1536
+...
+005 (2515146.000.000) 2024-08-29 12:47:48 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:06, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:10:21, Sys 0 00:07:35  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1 20480000  20481024 
+	   GPUs                 :                           0 
+	   Memory (MB)          :     4151     1536      1536 
+	   TimeExecute (s)      :       42                    
+	   TimeSlotBusy (s)     :       44                    
+
+	Job terminated of its own accord at 2024-08-29T10:47:48Z with exit-code 1.
+...
+000 (2517510.000.000) 2024-08-29 13:51:18 Job submitted from host: <131.169.223.41:9618?addrs=131.169.223.41-9618+[2001-638-700-10df--1-29]-9618&alias=bird-htc-sched21.desy.de&noUDP&sock=schedd_3603117_2564>
+...
+001 (2517510.000.000) 2024-08-29 13:52:07 Job executing on host: <131.169.160.159:37581?addrs=131.169.160.159-37581+[2001-638-700-10a0--1-9f]-37581&alias=batch1059.desy.de>
+	SlotName: slot2_12@batch1059.desy.de
+	CondorScratchDir = "/var/lib/condor/execute/dir_2595454"
+	Cpus = 1
+	Disk = 20481522
+	GPUs = 0
+	Memory = 1536
+...
+006 (2517510.000.000) 2024-08-29 13:52:15 Image size of job updated: 145328
+	142  -  MemoryUsage of job (MB)
+	145324  -  ResidentSetSize of job (KB)
+...
+006 (2517510.000.000) 2024-08-29 13:57:15 Image size of job updated: 3721888
+	1955  -  MemoryUsage of job (MB)
+	2001204  -  ResidentSetSize of job (KB)
+...
+006 (2517510.000.000) 2024-08-29 14:02:16 Image size of job updated: 4771768
+	2617  -  MemoryUsage of job (MB)
+	2679616  -  ResidentSetSize of job (KB)
+...
+006 (2517510.000.000) 2024-08-29 14:07:17 Image size of job updated: 4776536
+	4108  -  MemoryUsage of job (MB)
+	4205572  -  ResidentSetSize of job (KB)
+...
+006 (2517510.000.000) 2024-08-29 14:12:17 Image size of job updated: 5063472
+	4108  -  MemoryUsage of job (MB)
+	4205572  -  ResidentSetSize of job (KB)
+...
+006 (2517510.000.000) 2024-08-29 14:32:19 Image size of job updated: 5066208
+	4108  -  MemoryUsage of job (MB)
+	4205572  -  ResidentSetSize of job (KB)
+...
+006 (2517510.000.000) 2024-08-29 15:02:21 Image size of job updated: 5310356
+	4108  -  MemoryUsage of job (MB)
+	4205572  -  ResidentSetSize of job (KB)
+...
+006 (2517510.000.000) 2024-08-29 15:52:27 Image size of job updated: 5310356
+	4571  -  MemoryUsage of job (MB)
+	4680596  -  ResidentSetSize of job (KB)
+...
+012 (2517510.000.000) 2024-08-29 15:52:28 Job was held.
+	Memory usage higher than 3 x requested memory
+	Code 26 Subcode 0
+...
+009 (2517510.000.000) 2024-08-30 11:04:54 Job was aborted.
+	via condor_rm (by user tayu)
+...
+000 (2728978.000.000) 2024-08-30 11:34:27 Job submitted from host: <131.169.223.41:9618?addrs=131.169.223.41-9618+[2001-638-700-10df--1-29]-9618&alias=bird-htc-sched21.desy.de&noUDP&sock=schedd_3603117_2564>
+...
+001 (2728978.000.000) 2024-08-30 11:35:00 Job executing on host: <131.169.77.205:37665?addrs=131.169.77.205-37665+[2001-638-700-104c--1-1cd]-37665&alias=bird759.desy.de>
+	SlotName: slot2_18@bird759.desy.de
+	CondorScratchDir = "/var/lib/condor/execute/dir_2280303"
+	Cpus = 1
+	Disk = 20481024
+	GPUs = 0
+	Memory = 1536
+...
+006 (2728978.000.000) 2024-08-30 11:35:09 Image size of job updated: 124016
+	122  -  MemoryUsage of job (MB)
+	124016  -  ResidentSetSize of job (KB)
+...
+006 (2728978.000.000) 2024-08-30 11:36:23 Image size of job updated: 1538320
+	713  -  MemoryUsage of job (MB)
+	729512  -  ResidentSetSize of job (KB)
+...
+005 (2728978.000.000) 2024-08-30 11:36:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:53, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:53, Sys 0 00:00:07  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1 20480000  20481024 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      713     1536      1536 
+	   TimeExecute (s)      :       83                    
+	   TimeSlotBusy (s)     :       84                    
+
+	Job terminated of its own accord at 2024-08-30T09:36:23Z with exit-code 0.
+...
+000 (2729201.000.000) 2024-08-30 11:38:43 Job submitted from host: <131.169.223.41:9618?addrs=131.169.223.41-9618+[2001-638-700-10df--1-29]-9618&alias=bird-htc-sched21.desy.de&noUDP&sock=schedd_3603117_2564>
+...
+001 (2729201.000.000) 2024-08-30 11:38:59 Job executing on host: <131.169.77.217:36597?addrs=131.169.77.217-36597+[2001-638-700-104c--1-1d9]-36597&alias=bird771.desy.de>
+	SlotName: slot2_18@bird771.desy.de
+	CondorScratchDir = "/var/lib/condor/execute/dir_2569788"
+	Cpus = 1
+	Disk = 20481024
+	GPUs = 0
+	Memory = 1536
+...
+006 (2729201.000.000) 2024-08-30 11:39:07 Image size of job updated: 185244
+	181  -  MemoryUsage of job (MB)
+	185200  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 11:44:07 Image size of job updated: 3146428
+	3013  -  MemoryUsage of job (MB)
+	3084428  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 11:49:07 Image size of job updated: 3822744
+	3457  -  MemoryUsage of job (MB)
+	3539764  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 11:54:08 Image size of job updated: 3942072
+	3457  -  MemoryUsage of job (MB)
+	3539764  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 11:59:09 Image size of job updated: 4099424
+	3457  -  MemoryUsage of job (MB)
+	3539764  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 12:14:10 Image size of job updated: 4192004
+	3457  -  MemoryUsage of job (MB)
+	3539764  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 12:19:11 Image size of job updated: 4402088
+	3457  -  MemoryUsage of job (MB)
+	3539764  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 12:24:11 Image size of job updated: 4676320
+	3457  -  MemoryUsage of job (MB)
+	3539764  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 12:49:13 Image size of job updated: 4676320
+	3938  -  MemoryUsage of job (MB)
+	4032104  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 13:04:14 Image size of job updated: 4797872
+	3938  -  MemoryUsage of job (MB)
+	4032104  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 13:09:14 Image size of job updated: 5026744
+	3938  -  MemoryUsage of job (MB)
+	4032104  -  ResidentSetSize of job (KB)
+...
+006 (2729201.000.000) 2024-08-30 13:34:16 Image size of job updated: 5026744
+	3985  -  MemoryUsage of job (MB)
+	4080100  -  ResidentSetSize of job (KB)
+...
+012 (2729201.000.000) 2024-08-30 14:39:24 Job was held.
+	Job runtime longer than reserved
+	Code 26 Subcode 0
+...
+009 (2729201.000.000) 2024-09-02 11:15:16 Job was aborted.
+	via condor_rm (by user tayu)
+...

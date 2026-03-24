@@ -1,0 +1,444 @@
+# Collection of a range of histogram configurations. Some of these are used
+# as input by some of the scripts provided by Pepper, for example for
+# evaluating b-tagging efficiencies.
+{
+    "1st_fatjet":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Leading AK8jet $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 50,
+                "lo": 0,
+                "hi": 4000
+            },
+            {
+                "name": "eta",
+                "label": "Leading fatjet $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+            },
+            {
+                "name": "softdrop_mass",
+                "label": "Leading AK8jet softdrop mass (GeV)",
+                "n_or_arr": 30,
+                "lo": 0,
+                "hi": 600
+            },
+        ],
+        "fill": {
+            "pt": [
+                "FatJet",
+                "pt",
+                {"leading": 1}
+            ],
+            "eta": [
+                "FatJet",
+                "eta",
+                {"leading": 1}
+            ],
+            "softdrop_mass": [
+                "FatJet",
+                "msoftdrop",
+                {"leading": 1}
+            ]
+        },
+        #"step_requirement": "cut:Has_at_least_two_fatjets"
+        "step_requirement": "cut:Has_at_least_three_fatjets"
+    },
+    "2nd_fatjet":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Subleading AK8jet $p_{{\\mathrm{{T}}}}$ (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 3000
+            },
+            {
+                "name": "eta",
+                "label": "Subleading fatjet $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+                
+            },
+            {
+                "name": "softdrop_mass",
+                "label": "Subleading AK8jet softdrop mass (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 1000
+            }
+        ],
+        "fill": {
+            "pt": [
+                "FatJet",
+                "pt",
+                {"leading": 2}
+            ],
+            "eta": [
+                "FatJet",
+                "eta",
+                {"leading": 2}
+            ],
+            "softdrop_mass": [
+                "FatJet",
+                "msoftdrop",
+                {"leading": 2}
+            ]
+        },
+        #"step_requirement": "cut:Has_at_least_two_fatjets"
+        "step_requirement": "cut:Has_at_least_three_fatjets"
+    },
+    "1st_fatjet_softdrop_mass":
+    {
+        "bins": [
+            {
+                "name": "softdrop_mass",
+                "label": "Leading AK8jet softdrop mass (GeV)",
+                "n_or_arr": 15,
+                "lo": 0,
+                "hi": 300
+            }
+        ],
+        "fill": {
+            "softdrop_mass": [
+                "FatJet",
+                "msoftdrop",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    "2nd_fatjet_softdrop_mass":
+    {
+        "bins": [
+            {
+                "name": "softdrop_mass",
+                "label": "Subleading AK8jet softdrop mass (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 1000
+            }
+        ],
+        "fill": {
+            "softdrop_mass": [
+                "FatJet",
+                "msoftdrop",
+                {"leading": 2}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    "1st_fatjet_eta":
+    {
+        "bins": [
+            {
+                "name": "eta",
+                "label": "Leading fatjet $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+            }
+        ],
+        "fill": {
+            "eta": [
+                "FatJet",
+                "eta",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    "2nd_fatjet_eta":
+    {
+        "bins": [
+            {
+                "name": "eta",
+                "label": "Subleading fatjet $\\eta$",
+                "n_or_arr": 20,
+                "lo": -2.4,
+                "hi": 2.4
+                
+            }
+        ],
+        "fill": {
+            "eta": [
+                "FatJet",
+                "eta",
+                {"leading": 2}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    #"njet": {
+    #    "bins": [
+    #        {
+    #            "name": "njet",
+    #            "label": "Number of jets",
+    #            "n_or_arr": 10,
+    #            "lo": 0,
+    #            "hi": 10
+    #        }
+    #    ],
+    #    "fill": {
+    #        "njet": [
+    #            "Jet",
+    #            {"function": "num"}
+    #        ]
+    #    },
+    #    "step_requirement": "cut:No add leps"
+    #},
+    "two_fatjets_mass": {
+        "bins": [
+            {
+                "name": "two_fatjets_mass",
+                "label": "M_X (GeV)",
+                "n_or_arr": 70,
+                "lo": 0,
+                "hi": 7000
+            }
+        ],
+        "fill": {
+            "two_fatjets_mass": [
+                "two_fatjets_mass",
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    #"Y_mass": {
+    #    "bins": [
+    #        {
+    #            "name": "Y_mass",
+    #            "label": "M_Y (GeV)",
+    #            "n_or_arr": 15,
+    #            "lo": 0,
+    #            "hi": 300
+    #        }
+    #    ],
+    #    "fill": {
+    #        "Y_mass": [
+    #            "Y mass",
+    #        ]
+    #    },
+    #    "step_requirement": "cut:Has_at_least_two_fatjets"
+    #},
+    #"Yprime_mass": {
+    #    "bins": [
+    #        {
+    #            "name": "Yprime_mass",
+    #            "label": "M_Yprime (GeV)",
+    #            "n_or_arr": 40,
+    #            "lo": 0,
+    #            "hi": 1000
+    #        }
+    #    ],
+    #    "fill": {
+    #        "Yprime_mass": [
+    #            "Yprime mass",
+    #        ]
+    #    },
+    #    "step_requirement": "cut:Has_at_least_two_fatjets"
+    #},
+    #"Gen_Y_mass": {
+    #    "bins": [
+    #        {
+    #            "name": "Gen_Y_mass",
+    #            "label": "Gen_M_Y (GeV)",
+    #            "n_or_arr": 15,
+    #            "lo": 0,
+    #            "hi": 300
+    #        }
+    #    ],
+    #    "fill": {
+    #        "Gen_Y_mass": [
+    #            "Gen Y mass",
+    #        ]
+    #    },
+    #    "step_requirement": "cut:Has_at_least_two_fatjets"
+    #},
+    #"Gen_Yprime_mass": {
+    #    "bins": [
+    #        {
+    #            "name": "Gen_Yprime_mass",
+    #            "label": "Gen_M_Yprime (GeV)",
+    #            "n_or_arr": 40,
+    #            "lo": 0,
+    #            "hi": 1000
+    #        }
+    #    ],
+    #    "fill": {
+    #        "Gen_Yprime_mass": [
+    #            "Gen Yprime mass",
+    #        ]
+    #    },
+    #    "step_requirement": "cut:Has_at_least_two_fatjets"
+    #},
+    "Gen_1st_fatjet": {
+        "bins": [
+            {
+                "name": "Gen_1st_fatjet_mass",
+                "label": "Gen level leading AK8jet mass (GeV)",
+                "n_or_arr": 30,
+                "lo": 0,
+                "hi": 600
+            },
+            #{
+            #    "name": "Gen_1st_fatjet_mass_match_Y",
+            #    "label": "Gen level leading AK8jet mass match Y particle (GeV)",
+            #    "n_or_arr": 30,
+            #    "lo": 0,
+            #    "hi": 600
+            #}
+        ],
+        "fill": {
+            "Gen_1st_fatjet_mass": [
+                "GenFatJet",
+                "mass",
+                {"leading": 1}
+            ],
+            #"Gen_1st_fatjet_mass_match_Y": [
+            #    "GenFatJet_match_Y",
+            #    "mass",
+            #    {"leading": 1}
+            #]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    "Gen_2nd_fatjet": {
+        "bins": [
+            {
+                "name": "Gen_2nd_fatjet_mass",
+                "label": "Gen level Subleading AK8 jet mass (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 1000
+            },
+            #{
+            #    "name": "Gen_2nd_fatjet_mass_match_Yprime",
+            #    "label": "Gen level Subleading AK8 jet mass match Yprime particle(GeV)",
+            #    "n_or_arr": 40,
+            #    "lo": 0,
+            #    "hi": 1000
+            #}
+        ],
+        "fill": {
+            "Gen_2nd_fatjet_mass": [
+                "GenFatJet",
+                "mass",
+                {"leading": 2}
+            ],
+            #"Gen_2nd_fatjet_mass_match_Yprime": [
+            #    "GenFatJet_match_Y",
+            #    "mass",
+            #    {"leading": 2}
+            #]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    "Gen_1st_fatjetpt_vs_mass":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Gen level leading AK8 jet pt (GeV)",
+                "n_or_arr": 15,
+                "lo": 0,
+                "hi": 4000
+            },
+            {
+                "name": "mass",
+                "label": "Gen level leading AK8 jet mass (GeV)",
+                "n_or_arr": 15,
+                "lo": 0,
+                "hi": 1000
+            }
+        ],
+        "fill": {
+            "pt": [
+                "GenFatJet",
+                "pt",
+                {"leading": 1}
+            ],
+            "mass": [
+                "GenFatJet",
+                "mass",
+                {"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    "Gen_2nd_fatjetpt_vs_mass":
+    {
+        "bins": [
+            {
+                "name": "pt",
+                "label": "Gen level Subleading AK8 jet pt (GeV)",
+                "n_or_arr": 15,
+                "lo": 0,
+                "hi": 3000
+            },
+            {
+                "name": "mass",
+                "label": "Gen level Subleading AK8 jet mass (GeV)",
+                "n_or_arr": 15,
+                "lo": 0,
+                "hi": 1000
+            }
+        ],
+        "fill": {
+            "pt": [
+                "GenFatJet",
+                "pt",
+                {"leading": 2}
+            ],
+            "mass": [
+                "GenFatJet",
+                "mass",
+                {"leading": 2}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    "Gen_1st_fatjet_match_Y": {
+        "bins": [
+            {
+                "name": "Gen_1st_fatjet_mass_match_Y",
+                "label": "Gen level leading AK8jet mass match Y particle (GeV)",
+                "n_or_arr": 30,
+                "lo": 0,
+                "hi": 600
+            }
+        ],
+        "fill": {
+            "Gen_1st_fatjet_mass_match_Y": [
+                "GenFatJet_match_Y",
+                #"mass",
+                #{"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+    "Gen_2nd_fatjet_match_Yprime": {
+        "bins": [
+            {
+                "name": "Gen_2nd_fatjet_mass_match_Yprime",
+                "label": "Gen level Subleading AK8jet mass match Yprime particle (GeV)",
+                "n_or_arr": 40,
+                "lo": 0,
+                "hi": 1000
+            }
+        ],
+        "fill": {
+            "Gen_2nd_fatjet_mass_match_Yprime": [
+                "GenFatJet_match_Yprime",
+                #"mass",
+                #{"leading": 1}
+            ]
+        },
+        "step_requirement": "cut:Has_at_least_two_fatjets"
+    },
+}
