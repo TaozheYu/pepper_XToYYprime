@@ -12,10 +12,10 @@ source example/environment.sh
 ```
 
 # Make the config files
-The config files are in the `data/<year>` directory, the name is something like 'config\_diboson\_make3DTemplate.hjson'. In this config file, you should set these things:
-1.the input dataset and MC sample(include signal and background)
-2.the cross section file, it is `data/crosssections\_13.hjson`, in this file you should set the corresponding cross section of input samples.
-3.the luminosity factor file, it is `data/<year>/lumifactors_*.json`, you can run `python3 scripts/compute_mc_lumifactors.py data/2017/config\_diboson\_make3DTemplate.hjson data/2017/lumifactors.json` to produce this file
+The config files are in the `data/<year>` directory, the name is something like `config_diboson_make3DTemplate.hjson`. In this config file, you should set these things:
+1. the input dataset and MC sample(include signal and background)
+2. the cross section file, it is `data/crosssections_13.hjson`, in this file you should set the corresponding cross section of input samples.
+3. the luminosity factor file, it is `data/<year>/lumifactors_*.json`, you can run `python3 scripts/compute_mc_lumifactors.py data/2017/config_diboson_make3DTemplate.hjson data/2017/lumifactors.json` to produce this file
 
 # Produce the 3D histogram
 `processor_diboson_make3DTemplate.py` is used to run the resolved case,`processor_diboson_boosted_make3DTemplate.py` is used to run the boosted case. You can follow these command to run the code at debug model 
