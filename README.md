@@ -2,6 +2,15 @@ This pepper framework was created to do XToYYprime analysis. Using this framewor
 
 You can follow these steps to procude the histogram:
 
+# Creat the local working area
+
+Copy the project in the location
+
+```bash
+cd <YOUR_PATH>
+git clone git@github.com:TaozheYu/pepper_XToYYprime.git
+```
+
 # Set the environment
 Before doing this step, you should first setup your grid certificate, you can see here:
 https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookStartingGrid#BasicGrid
