@@ -188,12 +188,13 @@ class ProcessorTTXS(pepper.ProcessorTTbarLL):
     def Jet_categories(self, selector, data):
         #HP is PN larger than tight WP, LP is PN between tight and medium WP
         cats = {} 
-        Xqq_vs_QCD = data["FatJet"][:,0].particleNetMD_Xqq/(data["FatJet"][:,0].particleNetMD_Xqq + data["FatJet"][:,0].particleNetMD_QCD)        
-        cats["HP"] = (Xqq_vs_QCD>=0.891)
-        cats["LP"] = ((Xqq_vs_QCD<0.891) & (Xqq_vs_QCD>0.810))
-        cats["rest"] = (Xqq_vs_QCD<0.810)
+        Xqq_vs_QCD_leading = data["FatJet"][:,0].particleNetMD_Xqq/(data["FatJet"][:,0].particleNetMD_Xqq + data["FatJet"][:,0].particleNetMD_QCD)        
+        Xqq_vs_QCD_subleading = data["FatJet"][:,1].particleNetMD_Xqq/(data["FatJet"][:,1].particleNetMD_Xqq + data["FatJet"][:,1].particleNetMD_QCD)        
+        cats["HPHP"] =(Xqq_vs_QCD_leading>=0.891) & (Xqq_vs_QCD_subleading>=0.891)
+        cats["HPLP"] = (Xqq_vs_QCD_leading>=0.891) & ((Xqq_vs_QCD_subleading<0.891) & (Xqq_vs_QCD_subleading>0.810))
+        cats["HPrest"] = (Xqq_vs_QCD_leading>=0.891) & (Xqq_vs_QCD_subleading<0.810)
 
-        selector.set_cat("Categories", {"HP", "LP", "rest"})
+        selector.set_cat("Categories", {"HPHP", "HPLP", "HPrest"})
         return cats       
 
     def Get_event_weight(self,data):
